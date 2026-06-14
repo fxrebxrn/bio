@@ -1,0 +1,413 @@
+@media (max-width: 1400px) {
+    body {
+        padding: 0 24px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .home-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "center center"
+            "bio socials"
+            "tracks contact"
+            "stats stats"
+            "friends friends";
+        max-height: none;
+        gap: 14px;
+    }
+
+    .home-main-image {
+        padding: 10px 0;
+    }
+
+    .home-main-img {
+        height: auto;
+        max-height: 380px;
+        max-width: 100%;
+    }
+
+    .home-section-title h1 {
+        font-size: 13px;
+    }
+
+    .home-track-label h2 {
+        font-size: 12px;
+    }
+
+    .home-track-label h3 {
+        font-size: 10px;
+    }
+
+    .home-trackname h2 {
+        font-size: 13px;
+    }
+
+    .home-social-label h2 {
+        font-size: 10px;
+    }
+
+    .friend-label h2 {
+        font-size: 11px;
+    }
+
+    .friend img {
+        width: 52px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 16px;
+        height: auto;
+        min-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .home-header {
+        margin: 8px 0;
+        padding: 0 0 8px 0;
+    }
+
+    .home-header h1,
+    .home-header p,
+    .home-header a {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .home-main {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-height: none;
+        padding-bottom: 24px;
+    }
+
+    .home-main-image {
+        order: -1;
+        padding: 5px 0;
+    }
+
+    .home-main-img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    .home-section {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .home-section-title h1 {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .home-section-title-heart {
+        height: 18px;
+    }
+
+    .home-section-footer-heart {
+        height: 26px;
+    }
+
+    .home-bio-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .top-tracks.home-section {
+        padding: 12px;
+        gap: 6px;
+    }
+
+    .home-top-track {
+        padding: 10px 12px;
+    }
+
+    .home-track-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-track-label h2 {
+        font-size: 12px;
+    }
+
+    .home-track-label h3 {
+        font-size: 10px;
+    }
+
+    .home-trackname h2 {
+        font-size: 12px;
+    }
+
+    .home-track-new {
+        font-size: 8px;
+        padding: 2px 4px;
+    }
+
+    .player-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .home-stats-container {
+        padding-top: 0;
+    }
+
+    .home-stats-container h1 {
+        font-size: 20px;
+    }
+
+    .home-stats-container h2 {
+        font-size: 9px;
+    }
+
+    .home-stats-footer h3 {
+        font-size: 10px;
+    }
+
+    .home-socials-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .home-social {
+        padding: 10px 12px;
+    }
+
+    .home-social-label h2 {
+        font-size: 10px;
+    }
+
+    .home-contact-link h2 {
+        font-size: 12px;
+    }
+
+    .home-contact-footer h3 {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .home-contact-content {
+        gap: 20px;
+    }
+
+    .home-contact-footer {
+        gap: 20px;
+    }
+
+    .home-friends-container {
+        gap: 10px;
+        padding: 0 4px;
+        justify-content: center;
+    }
+
+    .friend {
+        padding: 10px 12px;
+        gap: 5px;
+        flex-basis: calc(33.333% - 10px);
+        min-width: 0;
+    }
+
+    .friend img {
+        width: 48px;
+    }
+
+    .friend-label h2 {
+        font-size: 10px;
+    }
+
+    .friend-tag {
+        font-size: 8px;
+        padding: 2px 5px;
+    }
+
+    .ambient-particles .particle:nth-child(n+21) {
+        display: none;
+    }
+
+    .home-header,
+    .home-section,
+    .home-main-image,
+    .home-top-track,
+    .home-social,
+    .friend,
+    .home-main-img {
+        will-change: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 12px;
+    }
+
+    .home-header {
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        margin: 6px 0;
+    }
+
+    .home-header h1,
+    .home-header p,
+    .home-header a {
+        font-size: 9px;
+    }
+
+    .home-main-img {
+        max-height: 240px;
+    }
+
+    .home-section {
+        padding: 12px 14px;
+    }
+
+    .home-section-title h1 {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .home-bio-content p {
+        font-size: 11px;
+    }
+
+    .home-stats-container h1 {
+        font-size: 18px;
+    }
+
+    .home-stats-container h2 {
+        font-size: 8px;
+    }
+
+    .home-socials-container {
+        gap: 6px;
+    }
+
+    .home-social {
+        padding: 8px 10px;
+    }
+
+    .home-social-label h2 {
+        font-size: 9px;
+    }
+
+    .home-social-icon {
+        max-width: 16px;
+        max-height: 16px;
+    }
+
+    .home-social-icon-arrow {
+        max-width: 14px;
+        max-height: 14px;
+    }
+
+    .home-friends-container {
+        gap: 8px;
+    }
+
+    .friend {
+        flex-basis: calc(50% - 8px);
+        padding: 10px 10px;
+    }
+
+    .friend img {
+        width: 42px;
+    }
+
+    .friend-label h2 {
+        font-size: 9px;
+    }
+
+    .friend-tag {
+        font-size: 7px;
+    }
+
+    .home-contact-content {
+        gap: 16px;
+    }
+
+    .home-contact-footer {
+        gap: 16px;
+    }
+
+    .home-contact-link h2 {
+        font-size: 11px;
+    }
+
+    .home-contact-link svg {
+        max-width: 16px;
+        max-height: 16px;
+    }
+
+    .home-contact-footer h3 {
+        font-size: 10px;
+    }
+
+    .home-track-info {
+        gap: 10px;
+    }
+
+    .home-track-img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .home-trackname h2 {
+        font-size: 11px;
+    }
+
+    .home-track-label h3 {
+        font-size: 9px;
+    }
+
+    .player-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ambient-particles .particle:nth-child(n+11) {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .home-main {
+        gap: 10px;
+    }
+
+    .home-main-img {
+        max-height: 200px;
+    }
+
+    .home-section-title h1 {
+        font-size: 10px;
+    }
+
+    .home-bio-content p {
+        font-size: 10px;
+    }
+
+    .home-stats-container h1 {
+        font-size: 16px;
+    }
+
+    .friend {
+        flex-basis: calc(50% - 6px);
+    }
+
+    .friend img {
+        width: 38px;
+    }
+}

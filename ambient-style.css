@@ -1,0 +1,177 @@
+.ambient-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 99999;
+    pointer-events: none;
+    perspective: 1000px;
+}
+
+.ambient-particles .particle {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-font-smoothing: antialiased;
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.95)) 
+            drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+}
+
+.ambient-particles .p1  { top: 5%;  left: 12%; width: 4px; height: 4px; animation: smooth-drift-A 72s infinite ease-in-out -15s; }
+.ambient-particles .p2  { top: 12%; left: 45%; width: 3px; height: 3px; animation: smooth-drift-B 85s infinite ease-in-out -42s; }
+.ambient-particles .p3  { top: 18%; left: 78%; width: 5px; height: 5px; animation: smooth-drift-C 64s infinite ease-in-out -8s; }
+.ambient-particles .p4  { top: 25%; left: 23%; width: 3px; height: 3px; animation: smooth-drift-D 92s infinite ease-in-out -55s; }
+.ambient-particles .p5  { top: 32%; left: 61%; width: 4px; height: 4px; animation: smooth-drift-E 79s infinite ease-in-out -23s; }
+.ambient-particles .p6  { top: 40%; left: 88%; width: 2px; height: 2px; animation: smooth-drift-F 55s infinite ease-in-out -12s; }
+.ambient-particles .p7  { top: 47%; left: 14%; width: 5px; height: 5px; animation: smooth-drift-G 88s infinite ease-in-out -67s; }
+.ambient-particles .p8  { top: 55%; left: 39%; width: 3px; height: 3px; animation: smooth-drift-H 74s infinite ease-in-out -31s; }
+.ambient-particles .p9  { top: 62%; left: 72%; width: 4px; height: 4px; animation: smooth-drift-A 66s infinite ease-in-out -4s; }
+.ambient-particles .p10 { top: 70%; left: 5%;  width: 3px; height: 3px; animation: smooth-drift-B 95s infinite ease-in-out -73s; }
+
+.ambient-particles .p11 { top: 78%; left: 53%; width: 5px; height: 5px; animation: smooth-drift-C 81s infinite ease-in-out -19s; }
+.ambient-particles .p12 { top: 85%; left: 82%; width: 3px; height: 3px; animation: smooth-drift-D 69s infinite ease-in-out -48s; }
+.ambient-particles .p13 { top: 92%; left: 31%; width: 4px; height: 4px; animation: smooth-drift-E 87s infinite ease-in-out -36s; }
+.ambient-particles .p14 { top: 3%;  left: 67%; width: 2px; height: 2px; animation: smooth-drift-F 58s infinite ease-in-out -2s; }
+.ambient-particles .p15 { top: 9%;  left: 93%; width: 5px; height: 5px; animation: smooth-drift-G 76s infinite ease-in-out -59s; }
+.ambient-particles .p16 { top: 16%; left: 35%; width: 3px; height: 3px; animation: smooth-drift-H 90s infinite ease-in-out -14s; }
+.ambient-particles .p17 { top: 22%; left: 3%;  width: 4px; height: 4px; animation: smooth-drift-A 83s infinite ease-in-out -44s; }
+.ambient-particles .p18 { top: 29%; left: 50%; width: 3px; height: 3px; animation: smooth-drift-B 61s infinite ease-in-out -27s; }
+.ambient-particles .p19 { top: 36%; left: 75%; width: 5px; height: 5px; animation: smooth-drift-C 94s infinite ease-in-out -81s; }
+.ambient-particles .p20 { top: 43%; left: 19%; width: 3px; height: 3px; animation: smooth-drift-D 70s infinite ease-in-out -10s; }
+
+.ambient-particles .p21 { top: 51%; left: 58%; width: 4px; height: 4px; animation: smooth-drift-E 77s infinite ease-in-out -52s; }
+.ambient-particles .p22 { top: 58%; left: 85%; width: 2px; height: 2px; animation: smooth-drift-F 63s infinite ease-in-out -38s; }
+.ambient-particles .p23 { top: 66%; left: 11%; width: 5px; height: 5px; animation: smooth-drift-G 89s infinite ease-in-out -21s; }
+.ambient-particles .p24 { top: 73%; left: 44%; width: 3px; height: 3px; animation: smooth-drift-H 82s infinite ease-in-out -63s; }
+.ambient-particles .p25 { top: 81%; left: 69%; width: 4px; height: 4px; animation: smooth-drift-A 71s infinite ease-in-out -9s; }
+.ambient-particles .p26 { top: 88%; left: 96%; width: 3px; height: 3px; animation: smooth-drift-B 65s infinite ease-in-out -47s; }
+.ambient-particles .p27 { top: 95%; left: 40%; width: 5px; height: 5px; animation: smooth-drift-C 86s infinite ease-in-out -76s; }
+.ambient-particles .p28 { top: 2%;  left: 26%; width: 3px; height: 3px; animation: smooth-drift-D 93s infinite ease-in-out -17s; }
+.ambient-particles .p29 { top: 8%;  left: 80%; width: 4px; height: 4px; animation: smooth-drift-E 60s infinite ease-in-out -33s; }
+.ambient-particles .p30 { top: 14%; left: 55%; width: 2px; height: 2px; animation: smooth-drift-F 73s infinite ease-in-out -50s; }
+
+.ambient-particles .p31 { top: 21%; left: 15%; width: 4px; height: 4px; animation: smooth-drift-G 80s infinite ease-in-out -5s; }
+.ambient-particles .p32 { top: 27%; left: 42%; width: 3px; height: 3px; animation: smooth-drift-H 67s infinite ease-in-out -28s; }
+.ambient-particles .p33 { top: 34%; left: 70%; width: 5px; height: 5px; animation: smooth-drift-A 91s infinite ease-in-out -61s; }
+.ambient-particles .p34 { top: 41%; left: 94%; width: 3px; height: 3px; animation: smooth-drift-B 75s infinite ease-in-out -11s; }
+.ambient-particles .p35 { top: 48%; left: 33%; width: 4px; height: 4px; animation: smooth-drift-C 62s infinite ease-in-out -40s; }
+.ambient-particles .p36 { top: 56%; left: 4%;  width: 2px; height: 2px; animation: smooth-drift-D 84s infinite ease-in-out -70s; }
+.ambient-particles .p37 { top: 63%; left: 49%; width: 5px; height: 5px; animation: smooth-drift-E 96s infinite ease-in-out -22s; }
+.ambient-particles .p38 { top: 71%; left: 76%; width: 3px; height: 3px; animation: smooth-drift-F 68s infinite ease-in-out -54s; }
+.ambient-particles .p39 { top: 79%; left: 21%; width: 4px; height: 4px; animation: smooth-drift-G 74s infinite ease-in-out -13s; }
+.ambient-particles .p40 { top: 86%; left: 60%; width: 3px; height: 3px; animation: smooth-drift-H 87s infinite ease-in-out -45s; }
+
+.ambient-particles .p41 { top: 93%; left: 87%; width: 4px; height: 4px; animation: smooth-drift-A 64s infinite ease-in-out -37s; }
+.ambient-particles .p42 { top: 4%;  left: 10%; width: 3px; height: 3px; animation: smooth-drift-B 89s infinite ease-in-out -79s; }
+.ambient-particles .p43 { top: 11%; left: 37%; width: 5px; height: 5px; animation: smooth-drift-C 72s infinite ease-in-out -18s; }
+.ambient-particles .p44 { top: 17%; left: 65%; width: 3px; height: 3px; animation: smooth-drift-D 81s infinite ease-in-out -51s; }
+.ambient-particles .p45 { top: 24%; left: 91%; width: 4px; height: 4px; animation: smooth-drift-E 95s infinite ease-in-out -30s; }
+.ambient-particles .p46 { top: 31%; left: 28%; width: 2px; height: 2px; animation: smooth-drift-F 57s infinite ease-in-out -6s; }
+.ambient-particles .p47 { top: 38%; left: 52%; width: 5px; height: 5px; animation: smooth-drift-G 78s infinite ease-in-out -65s; }
+.ambient-particles .p48 { top: 46%; left: 81%; width: 3px; height: 3px; animation: smooth-drift-H 66s infinite ease-in-out -24s; }
+.ambient-particles .p49 { top: 53%; left: 16%; width: 4px; height: 4px; animation: smooth-drift-A 90s infinite ease-in-out -43s; }
+.ambient-particles .p50 { top: 60%; left: 43%; width: 3px; height: 3px; animation: smooth-drift-B 73s infinite ease-in-out -12s; }
+
+.ambient-particles .p51 { top: 68%; left: 68%; width: 5px; height: 5px; animation: smooth-drift-C 83s infinite ease-in-out -57s; }
+.ambient-particles .p52 { top: 75%; left: 95%; width: 3px; height: 3px; animation: smooth-drift-D 61s infinite ease-in-out -32s; }
+.ambient-particles .p53 { top: 83%; left: 25%; width: 4px; height: 4px; animation: smooth-drift-E 88s infinite ease-in-out -71s; }
+.ambient-particles .p54 { top: 90%; left: 50%; width: 2px; height: 2px; animation: smooth-drift-F 70s infinite ease-in-out -3s; }
+.ambient-particles .p55 { top: 97%; left: 77%; width: 5px; height: 5px; animation: smooth-drift-G 94s infinite ease-in-out -49s; }
+.ambient-particles .p56 { top: 6%;  left: 32%; width: 3px; height: 3px; animation: smooth-drift-H 65s infinite ease-in-out -16s; }
+.ambient-particles .p57 { top: 13%; left: 8%;  width: 4px; height: 4px; animation: smooth-drift-A 76s infinite ease-in-out -39s; }
+.ambient-particles .p58 { top: 19%; left: 59%; width: 3px; height: 3px; animation: smooth-drift-B 82s infinite ease-in-out -68s; }
+.ambient-particles .p59 { top: 26%; left: 84%; width: 5px; height: 5px; animation: smooth-drift-C 59s infinite ease-in-out -26s; }
+.ambient-particles .p60 { top: 33%; left: 20%; width: 3px; height: 3px; animation: smooth-drift-D 87s infinite ease-in-out -80s; }
+
+.ambient-particles .p61 { top: 42%; left: 47%; width: 4px; height: 4px; animation: smooth-drift-E 71s infinite ease-in-out -7s; }
+.ambient-particles .p62 { top: 49%; left: 73%; width: 2px; height: 2px; animation: smooth-drift-F 93s infinite ease-in-out -53s; }
+.ambient-particles .p63 { top: 57%; left: 98%; width: 5px; height: 5px; animation: smooth-drift-G 68s infinite ease-in-out -29s; }
+.ambient-particles .p64 { top: 64%; left: 12%; width: 3px; height: 3px; animation: smooth-drift-H 79s infinite ease-in-out -60s; }
+.ambient-particles .p65 { top: 72%; left: 38%; width: 4px; height: 4px; animation: smooth-drift-A 86s infinite ease-in-out -14s; }
+.ambient-particles .p66 { top: 79%; left: 64%; width: 3px; height: 3px; animation: smooth-drift-B 60s infinite ease-in-out -46s; }
+.ambient-particles .p67 { top: 87%; left: 90%; width: 5px; height: 5px; animation: smooth-drift-C 92s infinite ease-in-out -74s; }
+.ambient-particles .p68 { top: 94%; left: 22%; width: 3px; height: 3px; animation: smooth-drift-D 75s infinite ease-in-out -20s; }
+.ambient-particles .p69 { top: 1%;  left: 41%; width: 4px; height: 4px; animation: smooth-drift-E 63s infinite ease-in-out -35s; }
+.ambient-particles .p70 { top: 7%;  left: 70%; width: 3px; height: 3px; animation: smooth-drift-F 81s infinite ease-in-out -62s; }
+
+.ambient-particles .p71 { top: 15%; left: 97%; width: 5px; height: 5px; animation: smooth-drift-G 84s infinite ease-in-out -11s; }
+.ambient-particles .p72 { top: 23%; left: 17%; width: 3px; height: 3px; animation: smooth-drift-H 70s infinite ease-in-out -41s; }
+.ambient-particles .p73 { top: 30%; left: 46%; width: 4px; height: 4px; animation: smooth-drift-A 97s infinite ease-in-out -77s; }
+.ambient-particles .p74 { top: 37%; left: 79%; width: 3px; height: 3px; animation: smooth-drift-B 66s infinite ease-in-out -25s; }
+.ambient-particles .p75 { top: 45%; left: 6%;  width: 5px; height: 5px; animation: smooth-drift-C 78s infinite ease-in-out -48s; }
+.ambient-particles .p76 { top: 52%; left: 35%; width: 3px; height: 3px; animation: smooth-drift-D 56s infinite ease-in-out -2s; }
+.ambient-particles .p77 { top: 59%; left: 62%; width: 4px; height: 4px; animation: smooth-drift-E 89s infinite ease-in-out -66s; }
+.ambient-particles .p78 { top: 67%; left: 86%; width: 2px; height: 2px; animation: smooth-drift-F 72s infinite ease-in-out -34s; }
+.ambient-particles .p79 { top: 74%; left: 29%; width: 5px; height: 5px; animation: smooth-drift-G 61s infinite ease-in-out -50s; }
+.ambient-particles .p80 { top: 82%; left: 54%; width: 3px; height: 3px; animation: smooth-drift-H 94s infinite ease-in-out -17s; }
+
+
+@keyframes smooth-drift-A {
+    0%   { transform: translate3d(0, 0, 0) rotate(0.05deg); opacity: 0; }
+    20%  { opacity: 0.75; }
+    50%  { transform: translate3d(240px, -180px, 0) rotate(0.05deg); opacity: 0.2; }
+    75%  { transform: translate3d(-80px, -320px, 0) rotate(0.05deg); opacity: 0.75; }
+    100% { transform: translate3d(0, 0, 0) rotate(0.05deg); opacity: 0; }
+}
+
+@keyframes smooth-drift-B {
+    0%   { transform: translate3d(0, 0, 0) rotate(-0.05deg); opacity: 0; }
+    25%  { opacity: 0.8; }
+    45%  { transform: translate3d(-220px, 140px, 0) rotate(-0.05deg); opacity: 0.15; }
+    70%  { transform: translate3d(140px, -200px, 0) rotate(-0.05deg); opacity: 0.65; }
+    100% { transform: translate3d(0, 0, 0) rotate(-0.05deg); opacity: 0; }
+}
+
+@keyframes smooth-drift-C {
+    0%   { transform: translate3d(0, 0, 0) rotate(0.05deg); opacity: 0; }
+    15%  { opacity: 0.7; }
+    40%  { transform: translate3d(280px, 190px, 0) rotate(0.05deg); opacity: 0.1; }
+    75%  { transform: translate3d(90px, -90px, 0) rotate(0.05deg); opacity: 0.8; }
+    100% { transform: translate3d(0, 0, 0) rotate(0.05deg); opacity: 0; }
+}
+
+@keyframes smooth-drift-D {
+    0%   { transform: translate3d(0, 0, 0) rotate(-0.05deg); opacity: 0; }
+    30%  { opacity: 0.75; }
+    60%  { transform: translate3d(-190px, -260px, 0) rotate(-0.05deg); opacity: 0.25; }
+    85%  { transform: translate3d(160px, -120px, 0) rotate(-0.05deg); opacity: 0.7; }
+    100% { transform: translate3d(0, 0, 0) rotate(-0.05deg); opacity: 0; }
+}
+
+@keyframes smooth-drift-E {
+    0%   { transform: translate3d(0, 0, 0) rotate(0.05deg); opacity: 0; }
+    20%  { opacity: 0.6; }
+    50%  { transform: translate3d(-120px, 240px, 0) rotate(0.05deg); opacity: 0.85; }
+    80%  { transform: translate3d(210px, 90px, 0) rotate(0.05deg); opacity: 0.15; }
+    100% { transform: translate3d(0, 0, 0) rotate(0.05deg); opacity: 0; }
+}
+
+@keyframes smooth-drift-F {
+    0%   { transform: translate3d(0, 0, 0) rotate(-0.05deg); opacity: 0; }
+    15%  { opacity: 0.75; }
+    45%  { transform: translate3d(190px, -220px, 0) rotate(-0.05deg); opacity: 0.2; }
+    75%  { transform: translate3d(-140px, 160px, 0) rotate(-0.05deg); opacity: 0.75; }
+    100% { transform: translate3d(0, 0, 0) rotate(-0.05deg); opacity: 0; }
+}
+
+@keyframes smooth-drift-G {
+    0%   { transform: translate3d(0, 0, 0) rotate(0.05deg); opacity: 0; }
+    35%  { opacity: 0.8; }
+    65%  { transform: translate3d(-260px, -150px, 0) rotate(0.05deg); opacity: 0.15; }
+    85%  { transform: translate3d(110px, 210px, 0) rotate(0.05deg); opacity: 0.65; }
+    100% { transform: translate3d(0, 0, 0) rotate(0.05deg); opacity: 0; }
+}
+
+@keyframes smooth-drift-H {
+    0%   { transform: translate3d(0, 0, 0) rotate(-0.05deg); opacity: 0; }
+    25%  { opacity: 0.65; }
+    55%  { transform: translate3d(150px, 280px, 0) rotate(-0.05deg); opacity: 0.8; }
+    75%  { transform: translate3d(-190px, -80px, 0) rotate(-0.05deg); opacity: 0.2; }
+    100% { transform: translate3d(0, 0, 0) rotate(-0.05deg); opacity: 0; }
+}

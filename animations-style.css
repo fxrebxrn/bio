@@ -1,0 +1,199 @@
+:root {
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.home-header,
+.home-section,
+.home-main-image {
+    opacity: 0;
+}
+
+.home-top-track,
+.home-social,
+.friend {
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-25px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleReveal {
+    from { opacity: 0; transform: scale(0.94); filter: blur(6px); }
+    to   { opacity: 1; transform: scale(1); filter: blur(0px); }
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes cursorBlink {
+    0%, 100% { opacity: 0; }
+    50%      { opacity: 1; }
+}
+
+@keyframes titleGlow {
+    0%   { text-shadow: 0 0 8px rgba(255,255,255,0.4); }
+    50%  { text-shadow: 0 0 25px rgba(255,255,255,0.9), 0 0 50px rgba(255,255,255,0.25); }
+    100% { text-shadow: 0 0 8px rgba(255,255,255,0.4); }
+}
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    25%      { transform: scale(1.2); }
+    50%      { transform: scale(1); }
+    75%      { transform: scale(1.15); }
+}
+
+@keyframes subtleFloat {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-6px); }
+}
+
+@keyframes newBadgePulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+    50%      { box-shadow: 0 0 10px 2px rgba(255,255,255,0.25); }
+}
+
+@keyframes borderShimmer {
+    0%   { border-color: rgba(255,255,255,0.07); }
+    50%  { border-color: rgba(255,255,255,0.22); }
+    100% { border-color: rgba(255,255,255,0.07); }
+}
+
+@keyframes spinOnce {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.home-header {
+    animation: fadeInDown 1s var(--ease-out-expo) 0.1s forwards;
+}
+
+.home-section.bio {
+    animation: fadeInUp 0.9s var(--ease-out-expo) 0.15s forwards,
+               borderShimmer 1.5s ease-in-out 2.5s 1;
+}
+
+.home-section.top-tracks {
+    animation: fadeInUp 0.9s var(--ease-out-expo) 0.3s forwards,
+               borderShimmer 1.5s ease-in-out 2.7s 1;
+}
+
+.home-section.stats {
+    animation: fadeInUp 0.9s var(--ease-out-expo) 0.45s forwards,
+               borderShimmer 1.5s ease-in-out 2.9s 1;
+}
+
+.home-main-image {
+    animation: scaleReveal 1.3s var(--ease-out-expo) 0.25s forwards;
+}
+
+.home-main-img {
+    animation: subtleFloat 5s ease-in-out 2s infinite;
+}
+
+.home-section.socials {
+    animation: slideInRight 0.9s var(--ease-out-expo) 0.2s forwards,
+               borderShimmer 1.5s ease-in-out 2.6s 1;
+}
+
+.home-section.contact {
+    animation: slideInRight 0.9s var(--ease-out-expo) 0.35s forwards,
+               borderShimmer 1.5s ease-in-out 2.8s 1;
+}
+
+.home-section.friends {
+    animation: fadeInUp 0.9s var(--ease-out-expo) 0.55s forwards,
+               borderShimmer 1.5s ease-in-out 3.0s 1;
+}
+
+.home-top-track:nth-child(1) { animation: slideInLeft 0.7s var(--ease-out-expo) 0.50s forwards; }
+.home-top-track:nth-child(2) { animation: slideInLeft 0.7s var(--ease-out-expo) 0.65s forwards; }
+.home-top-track:nth-child(3) { animation: slideInLeft 0.7s var(--ease-out-expo) 0.80s forwards; }
+
+.home-social:nth-child(1) { animation: fadeInUp 0.55s var(--ease-out-expo) 0.35s forwards; }
+.home-social:nth-child(2) { animation: fadeInUp 0.55s var(--ease-out-expo) 0.42s forwards; }
+.home-social:nth-child(3) { animation: fadeInUp 0.55s var(--ease-out-expo) 0.49s forwards; }
+.home-social:nth-child(4) { animation: fadeInUp 0.55s var(--ease-out-expo) 0.56s forwards; }
+.home-social:nth-child(5) { animation: fadeInUp 0.55s var(--ease-out-expo) 0.63s forwards; }
+.home-social:nth-child(6) { animation: fadeInUp 0.55s var(--ease-out-expo) 0.70s forwards; }
+
+.friend:nth-child(1) { animation: popIn 0.55s var(--ease-out-back) 0.70s forwards; }
+.friend:nth-child(2) { animation: popIn 0.55s var(--ease-out-back) 0.80s forwards; }
+.friend:nth-child(3) { animation: popIn 0.55s var(--ease-out-back) 0.90s forwards; }
+.friend:nth-child(4) { animation: popIn 0.55s var(--ease-out-back) 1.00s forwards; }
+.friend:nth-child(5) { animation: popIn 0.55s var(--ease-out-back) 1.10s forwards; }
+
+.home-section-title h1 {
+    animation: titleGlow 2.5s ease-in-out 1.5s 1;
+}
+
+.home-section-title-heart {
+    animation: heartBeat 1s ease-in-out 1.8s 1;
+}
+
+.home-section-footer-heart {
+    animation: heartBeat 1s ease-in-out 2s 1;
+}
+
+.home-track-new {
+    animation: newBadgePulse 2.5s ease-in-out 1.5s infinite;
+}
+
+.home-stats-footer h3 {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 3.5s forwards;
+}
+
+.bio-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    background: rgba(255,255,255,0.85);
+    margin-left: 1px;
+    vertical-align: text-bottom;
+    animation: cursorBlink 0.7s step-end infinite;
+}
+
+.bio-cursor-done {
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+.home-nav-link-dot {
+    animation: spinOnce 0.8s var(--ease-out-expo) 0.5s 1;
+}
+
+.home-nav-link.soon {
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.8s forwards;
+}
+
+.home-header,
+.home-section,
+.home-main-image,
+.home-top-track,
+.home-social,
+.friend,
+.home-main-img {
+    will-change: transform, opacity;
+}
