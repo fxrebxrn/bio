@@ -3,6 +3,13 @@
         padding: 0 24px;
         height: auto;
         min-height: 100vh;
+        position: relative;
+    }
+
+    .ambient-particles {
+        position: absolute;
+        bottom: 0;
+        height: auto;
     }
 
     .home-main {
@@ -55,13 +62,198 @@
     .friend img {
         width: 52px;
     }
+
+    .home-header {
+        animation: none;
+    }
+
+    .home-section.bio,
+    .home-section.top-tracks,
+    .home-section.stats,
+    .home-section.socials,
+    .home-section.contact,
+    .home-section.friends {
+        animation: none;
+    }
+
+    .home-main-image {
+        animation: none;
+    }
+
+    .home-main-img {
+        animation: none;
+    }
+
+    .home-top-track:nth-child(n) {
+        animation: none;
+    }
+
+    .home-social:nth-child(n) {
+        animation: none;
+    }
+
+    .friend:nth-child(n) {
+        animation: none;
+    }
+
+    .home-section-title h1 {
+        animation: none;
+    }
+
+    .home-section-title-heart {
+        animation: none;
+    }
+
+    .home-section-footer-heart {
+        animation: none;
+    }
+
+    .home-track-new {
+        animation: none;
+    }
+
+    .home-stats-footer h3 {
+        animation: none;
+    }
+
+    .home-nav-link-dot {
+        animation: none;
+    }
+
+    .home-nav-link.soon {
+        animation: none;
+    }
+
+    .home-header.in-view {
+        animation: fadeInDown 0.8s var(--ease-out-expo) forwards;
+    }
+
+    .home-header.in-view .home-nav-link-dot {
+        animation: spinOnce 0.8s var(--ease-out-expo) 0.3s 1;
+    }
+
+    .home-header.in-view .home-nav-link.soon {
+        animation: fadeInUp 0.8s ease 0.4s forwards;
+    }
+
+    .home-section.bio.in-view {
+        animation: fadeInUp 0.8s var(--ease-out-expo) forwards,
+                   borderShimmer 1.5s ease-in-out 1s 1;
+    }
+
+    .home-section.top-tracks.in-view {
+        animation: fadeInUp 0.8s var(--ease-out-expo) forwards,
+                   borderShimmer 1.5s ease-in-out 1s 1;
+    }
+
+    .home-section.stats.in-view {
+        animation: fadeInUp 0.8s var(--ease-out-expo) forwards,
+                   borderShimmer 1.5s ease-in-out 1s 1;
+    }
+
+    .home-main-image.in-view {
+        animation: scaleReveal 1s var(--ease-out-expo) forwards;
+    }
+
+    .home-main-image.in-view .home-main-img {
+        animation: subtleFloat 5s ease-in-out 0.8s infinite;
+    }
+
+    .home-section.socials.in-view {
+        animation: fadeInUp 0.8s var(--ease-out-expo) forwards,
+                   borderShimmer 1.5s ease-in-out 1s 1;
+    }
+
+    .home-section.contact.in-view {
+        animation: fadeInUp 0.8s var(--ease-out-expo) forwards,
+                   borderShimmer 1.5s ease-in-out 1s 1;
+    }
+
+    .home-section.friends.in-view {
+        animation: fadeInUp 0.8s var(--ease-out-expo) forwards,
+                   borderShimmer 1.5s ease-in-out 1s 1;
+    }
+
+    .in-view .home-top-track:nth-child(1) {
+        animation: slideInLeft 0.6s var(--ease-out-expo) 0.1s forwards;
+    }
+
+    .in-view .home-top-track:nth-child(2) {
+        animation: slideInLeft 0.6s var(--ease-out-expo) 0.2s forwards;
+    }
+
+    .in-view .home-top-track:nth-child(3) {
+        animation: slideInLeft 0.6s var(--ease-out-expo) 0.3s forwards;
+    }
+
+    .in-view .home-social:nth-child(1) {
+        animation: fadeInUp 0.5s var(--ease-out-expo) 0.05s forwards;
+    }
+
+    .in-view .home-social:nth-child(2) {
+        animation: fadeInUp 0.5s var(--ease-out-expo) 0.1s forwards;
+    }
+
+    .in-view .home-social:nth-child(3) {
+        animation: fadeInUp 0.5s var(--ease-out-expo) 0.15s forwards;
+    }
+
+    .in-view .home-social:nth-child(4) {
+        animation: fadeInUp 0.5s var(--ease-out-expo) 0.2s forwards;
+    }
+
+    .in-view .home-social:nth-child(5) {
+        animation: fadeInUp 0.5s var(--ease-out-expo) 0.25s forwards;
+    }
+
+    .in-view .home-social:nth-child(6) {
+        animation: fadeInUp 0.5s var(--ease-out-expo) 0.3s forwards;
+    }
+
+    .in-view .friend:nth-child(1) {
+        animation: popIn 0.5s var(--ease-out-back) 0.05s forwards;
+    }
+
+    .in-view .friend:nth-child(2) {
+        animation: popIn 0.5s var(--ease-out-back) 0.12s forwards;
+    }
+
+    .in-view .friend:nth-child(3) {
+        animation: popIn 0.5s var(--ease-out-back) 0.19s forwards;
+    }
+
+    .in-view .friend:nth-child(4) {
+        animation: popIn 0.5s var(--ease-out-back) 0.26s forwards;
+    }
+
+    .in-view .friend:nth-child(5) {
+        animation: popIn 0.5s var(--ease-out-back) 0.33s forwards;
+    }
+
+    .in-view .home-section-title h1 {
+        animation: titleGlow 2.5s ease-in-out 0.5s 1;
+    }
+
+    .in-view .home-section-title-heart {
+        animation: heartBeat 1s ease-in-out 0.6s 1;
+    }
+
+    .in-view .home-section-footer-heart {
+        animation: heartBeat 1s ease-in-out 0.8s 1;
+    }
+
+    .in-view .home-track-new {
+        animation: newBadgePulse 2.5s ease-in-out 0.5s infinite;
+    }
+
+    .home-section.stats.in-view .home-stats-footer h3 {
+        animation: fadeInUp 0.8s ease 0.4s forwards;
+    }
 }
 
 @media (max-width: 768px) {
     body {
         padding: 0 16px;
-        height: auto;
-        min-height: 100vh;
         overflow-x: hidden;
         overflow-y: auto;
     }
@@ -93,7 +285,6 @@
 
     .home-main-img {
         width: auto;
-        height: auto;
         max-width: 100%;
         max-height: 300px;
     }

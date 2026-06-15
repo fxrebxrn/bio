@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const playIcon = track.querySelector('.home-play');
         const pauseIcon = track.querySelector('.home-pause');
 
-        audio.volume = 0.2;
+        audio.volume = 0.3;
 
         btn.addEventListener('click', () => {
             
